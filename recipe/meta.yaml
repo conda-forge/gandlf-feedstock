@@ -10,7 +10,7 @@ source:
   sha256: 98d644b82136e3c5b3a832cd2011d93a51666d6edf6e51ec5a279474e802a6a0
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -37,6 +37,7 @@ requirements:
     - pyvips
     - pytest
     - python >=3.6
+    - torchvision
 
 
 test:
