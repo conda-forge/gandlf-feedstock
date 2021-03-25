@@ -10,7 +10,7 @@ source:
   sha256: 98d644b82136e3c5b3a832cd2011d93a51666d6edf6e51ec5a279474e802a6a0
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -20,6 +20,7 @@ requirements:
     - python >=3.6
   run:
     - torchio
+    - pytorch >=1.7
     - numpy
     - scipy
     - tqdm
