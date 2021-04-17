@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - torchio
+    - torchio ==0.18.29
     - pytorch >=1.7
     - numpy
     - scipy
