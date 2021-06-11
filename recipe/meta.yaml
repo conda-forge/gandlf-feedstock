@@ -41,6 +41,7 @@ requirements:
     - python >=3.6
     - torchvision
     - deprecated >=1.2.5
+    - medcam
 
 
 test:
