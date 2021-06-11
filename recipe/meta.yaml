@@ -40,7 +40,9 @@ requirements:
     - pytest
     - python >=3.6
     - torchvision
-    - deprecated >=1.2.5
+    - deprecated >=1.2.5    
+    - medcam
+    - psutil
 
 
 test:
