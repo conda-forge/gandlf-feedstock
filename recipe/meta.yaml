@@ -21,7 +21,7 @@ requirements:
   run:
     - torchio ==0.18.29
     - pytorch >=1.7
-    - numpy
+    - numpy ==1.19.2
     - scipy
     - tqdm
     - pandas
