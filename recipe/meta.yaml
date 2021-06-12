@@ -43,6 +43,7 @@ requirements:
     - deprecated >=1.2.5
     - medcam
     - psutil
+    - openslide-python
 
 
 test:
