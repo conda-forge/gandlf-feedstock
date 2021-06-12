@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - openslide
   run:
     - torchio ==0.18.29
@@ -39,7 +39,7 @@ requirements:
     - requests
     - pyvips
     - pytest
-    - python >=3.6
+    - python
     - torchvision
     - deprecated >=1.2.5
     - medcam
