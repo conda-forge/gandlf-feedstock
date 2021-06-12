@@ -11,13 +11,14 @@ source:
 
 build:
   number: 0
-  noarch: python
+  skip: true   # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
+    - openslide
   run:
     - torchio ==0.18.29
     - pytorch >=1.7
@@ -57,7 +58,7 @@ about:
   license: LicenseRef-CBICA
   license_family: BSD
   license_file: LICENSE
-  summary: A Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
+  summary: The Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
   doc_url: https://cbica.github.io/GaNDLF/
   dev_url: https://cbica.github.io/GaNDLF/extending
 
