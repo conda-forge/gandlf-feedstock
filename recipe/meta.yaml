@@ -43,6 +43,7 @@ requirements:
     - torchvision
     - deprecated >=1.2.5
     - medcam
+    - opencv
     - psutil
     - openslide-python >=1.1.2
     - coverage
