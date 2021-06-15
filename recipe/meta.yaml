@@ -49,6 +49,7 @@ requirements:
     - coverage
     - SimpleITK ==1.2.4
     - pytest-azurepipelines
+    - pkgconfig
 
 test:
   imports:
