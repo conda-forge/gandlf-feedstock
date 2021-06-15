@@ -50,7 +50,6 @@ requirements:
     - SimpleITK ==1.2.4
     - pytest-azurepipelines
 
-
 test:
   imports:
     - GANDLF
