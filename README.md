@@ -7,7 +7,7 @@ Package license: LicenseRef-CBICA
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gandlf-feedstock/blob/master/LICENSE.txt)
 
-Summary: A Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
+Summary: The Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
 
 Development: https://cbica.github.io/GaNDLF/extending
 
