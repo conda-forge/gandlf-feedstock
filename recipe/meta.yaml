@@ -50,6 +50,7 @@ requirements:
     - SimpleITK ==1.2.4
     - pytest-azurepipelines
     - pkgconfig
+    - torchmetrics
 
 test:
   imports:
