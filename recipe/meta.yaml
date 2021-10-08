@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CBICA/GaNDLF/archive/{{ version }}.tar.gz
-  sha256: c15a9f2a62ebea0a3e4c87bd3ac4369937e9a8a9f9161ae4f9d39426439e8f7f
+  sha256: 6c8e96ebbcd088fe03c184430c800e25cfb8847fdb15279016c50d2209c16376
 
 build:
   number: 0
