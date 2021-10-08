@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
     - openslide
   run:
-    - torchio ==0.18.29
+    - torchio ==0.18.57
     - pytorch >=1.7
     - numpy ==1.19.2
     - scipy
@@ -47,7 +47,7 @@ requirements:
     - psutil
     - openslide-python >=1.1.2
     - coverage
-    - SimpleITK ==1.2.4
+    - SimpleITK ==2.1.0
     - pytest-azurepipelines
     - pkgconfig
     - torchmetrics
