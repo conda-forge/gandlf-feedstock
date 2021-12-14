@@ -55,7 +55,6 @@ requirements:
 test:
   imports:
     - GANDLF
-    - GANDLF.models
     - GANDLF.utils
 
 about:
