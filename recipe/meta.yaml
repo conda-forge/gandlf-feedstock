@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/CBICA/GaNDLF/archive/{{ version }}.tar.gz
-  sha256: 173140e29a5f4dc7817e43312562eb4b9adc51cb7254e45990e6a9d92f6d0a5f
+  sha256: 62e807d9e57833ad563e1439a9006456b614f84696a79cdd4e8e9a7f252681db
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - torchio ==0.18.29
     - pytorch >=1.7
-    - numpy ==1.19.2
+    - numpy ==1.21.0
     - scipy
     - tqdm
     - pandas
