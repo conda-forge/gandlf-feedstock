@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.6
   run:
     - torchio ==0.18.57
     - pytorch >=1.7
@@ -37,14 +37,14 @@ requirements:
     - libvips
     - pyvips
     - pytest
-    - python >=3.7
+    - python >=3.6
     - torchvision
     - deprecated >=1.2.5
     - medcam
     - opencv
     - psutil
     - coverage
-    - SimpleITK !=2.0.*
+    - SimpleITK <2
     - pytest-azurepipelines
     - pkgconfig
     - torchmetrics ==0.5.1
