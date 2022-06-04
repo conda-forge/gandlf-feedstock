@@ -10,7 +10,7 @@ source:
   sha256: 26dd7ebb34cf2fa1747121c0f45ffebe04d9a93783223d51dcf9cb87f95313a4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,25 +18,23 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - openslide
   run:
-    - torchio ==0.18.29
+    - torchio ==0.18.57
     - pytorch >=1.7
     - numpy ==1.21.0
     - scipy
     - tqdm
     - pandas
     - pylint
-    - scikit-learn ==0.23.1
-    - pickle5 ==0.0.11
+    - scikit-learn >=0.23.2
+    - pickle5 >=0.0.11
     - setuptools
     - seaborn
     - pyyaml
-    - libvips
-    - openslide
     - scikit-image
     - matplotlib-base
     - requests
+    - libvips
     - pyvips
     - pytest
     - python >=3.6
@@ -45,17 +43,22 @@ requirements:
     - medcam
     - opencv
     - psutil
-    - openslide-python >=1.1.2
     - coverage
-    - SimpleITK ==1.2.4
+    - SimpleITK >=2.1.0
     - pytest-azurepipelines
     - pkgconfig
-    - torchmetrics
+    - torchmetrics ==0.5.1
+    - tiffslide
+    - pydicom
+    - OpenPatchMiner ==0.1.8
+    - onnx
 
 test:
   imports:
     - GANDLF
     - GANDLF.utils
+    - GANDLF.models
+    - GANDLF.compute
 
 about:
   home: https://github.com/CBICA/GaNDLF
