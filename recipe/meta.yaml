@@ -42,6 +42,7 @@ requirements:
     - deprecated >=1.2.5
     - medcam
     - opencv
+    - libopencv
     - psutil
     - coverage
     - simpleitk !=2.0.*
