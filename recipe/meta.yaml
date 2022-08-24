@@ -44,7 +44,7 @@ requirements:
     - opencv
     - psutil
     - coverage
-    - SimpleITK <2
+    - simpleitk !=2.0.*
     - pytest-azurepipelines
     - pkgconfig
     - torchmetrics ==0.5.1
