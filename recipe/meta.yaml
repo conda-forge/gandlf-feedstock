@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.14" %}
+{% set version = "0.0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,28 @@ package:
 
 source:
   url: https://github.com/CBICA/GaNDLF/archive/{{ version }}.tar.gz
-  sha256: 26dd7ebb34cf2fa1747121c0f45ffebe04d9a93783223d51dcf9cb87f95313a4
+  sha256: 2840fae73f245f3836d5da74c47d5e17ffd83c086b5235b6fcd74c7946a23165
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    # - git submodule update --init --recursive
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - torchio ==0.18.57
     - pytorch >=1.7
-    - numpy ==1.21.0
+    - numpy ==1.22.0
     - scipy
     - tqdm
     - pandas
     - pylint
     - scikit-learn >=0.23.2
-    - pickle5 >=0.0.11
     - setuptools
     - seaborn
     - pyyaml
@@ -37,28 +38,31 @@ requirements:
     - libvips
     - pyvips
     - pytest
-    - python >=3.6
+    - coverage
+    - pytest-cov
+    - python >=3.8
     - torchvision
     - deprecated >=1.2.5
     - medcam
     - opencv
     - psutil
     - coverage
-    - SimpleITK >=2.1.0
-    - pytest-azurepipelines
+    - SimpleITK !=2.0.*
     - pkgconfig
     - torchmetrics ==0.5.1
     - tiffslide
     - pydicom
     - OpenPatchMiner ==0.1.8
+    - zarr ==2.10.3
     - onnx
+    - torchinfo ==1.7.0
+    - black
 
 test:
   imports:
     - GANDLF
     - GANDLF.utils
     - GANDLF.models
-    - GANDLF.compute
 
 about:
   home: https://github.com/CBICA/GaNDLF
