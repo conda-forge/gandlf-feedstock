@@ -36,6 +36,8 @@ requirements:
     - libvips
     - pyvips
     - pytest
+    - coverage
+    - pytest-cov
     - python >=3.8
     - torchvision
     - deprecated >=1.2.5
@@ -44,13 +46,15 @@ requirements:
     - psutil
     - coverage
     - SimpleITK !=2.0.*
-    - pytest-azurepipelines
     - pkgconfig
     - torchmetrics ==0.5.1
     - tiffslide
     - pydicom
     - OpenPatchMiner ==0.1.8
+    - zarr ==2.10.3
     - onnx
+    - torchinfo ==1.7.0
+    - black
 
 test:
   imports:
