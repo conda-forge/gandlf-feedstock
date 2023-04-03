@@ -45,7 +45,7 @@ requirements:
     - seaborn
     - segmentation-models-pytorch ==0.3.0
     - setuptools
-    - simpleitk !=2.0.*
+    - simpleitk !=2.0.*,!=2.2.1
     - tiffslide
     - pytorch ==1.13.1
     - torchinfo ==1.7.0
