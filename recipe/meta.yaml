@@ -1,77 +1,75 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16.dev20230403" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/CBICA/GaNDLF/archive/{{ version }}.tar.gz
-  sha256: 2840fae73f245f3836d5da74c47d5e17ffd83c086b5235b6fcd74c7946a23165
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
+  sha256: e6a910647762acd05f93efd3ac52bc117570ac6164264da1544d3c3c9a577511
 
 build:
+  skip: true  # [py<38]
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  noarch: python
-  script:
-    # - git submodule update --init --recursive
-    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
   run:
-    - torchio ==0.18.57
-    - pytorch >=1.7
-    - numpy ==1.22.0
-    - scipy
-    - tqdm
-    - pandas
-    - pylint
-    - scikit-learn >=0.23.2
-    - setuptools
-    - seaborn
-    - pyyaml
-    - scikit-image
-    - matplotlib-base
-    - requests
-    - libvips
-    - pyvips
-    - pytest
-    - coverage
-    - pytest-cov
-    - python >=3.8
-    - torchvision
-    - deprecated >=1.2.5
-    - medcam
-    - opencv
-    - psutil
-    - coverage
-    - SimpleITK !=2.0.*
-    - pkgconfig
-    - torchmetrics ==0.5.1
-    - tiffslide
-    - pydicom
-    - OpenPatchMiner ==0.1.8
-    - zarr ==2.10.3
-    - onnx
-    - torchinfo ==1.7.0
+    - acsconv ==0.1.1
     - black
+    - coverage
+    - dicom-anonymizer
+    - docker-py
+    - keyring
+    - matplotlib-base
+    - medcam
+    - numpy ==1.22.0
+    - onnx
+    - opencv
+    - openpatchminer ==0.1.8
+    - pandas
+    - psutil
+    - pydicom
+    - pytest
+    - pytest-cov
+    - python
+    - pyyaml
+    - requests >=2.25.0
+    - scikit-image >=0.19.1
+    - scikit-learn >=0.23.2
+    - scipy
+    - seaborn
+    - segmentation-models-pytorch ==0.3.0
+    - setuptools
+    - simpleitk !=2.0.*
+    - tiffslide
+    - pytorch ==1.13.1
+    - torchinfo ==1.7.0
+    - torchio ==0.18.75
+    - torchmetrics ==0.5.1
+    - torchvision
+    - tqdm
+    - twine
+    - zarr ==2.10.3
 
 test:
   imports:
     - GANDLF
-    - GANDLF.utils
-    - GANDLF.models
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/CBICA/GaNDLF
-  license: LicenseRef-CBICA
-  license_family: BSD
-  license_file: LICENSE
-  summary: The Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
-  doc_url: https://cbica.github.io/GaNDLF/
-  dev_url: https://cbica.github.io/GaNDLF/extending
+  home: https://mlcommons.github.io/GaNDLF/
+  summary: PyTorch-based framework that handles segmentation/regression/classification using various DL architectures for medical imaging.
+  license: Apache-2.0
+  doc_url: https://mlcommons.github.io/GaNDLF/
+  dev_url: https://mlcommons.github.io/GaNDLF/extending/
 
 extra:
   recipe-maintainers:
