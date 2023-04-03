@@ -10,14 +10,14 @@ source:
   sha256: e6a910647762acd05f93efd3ac52bc117570ac6164264da1544d3c3c9a577511
 
 build:
-  skip: true  # [py<38]
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
     - acsconv ==0.1.1
     - black
@@ -36,7 +36,7 @@ requirements:
     - pydicom
     - pytest
     - pytest-cov
-    - python
+    - python >=3.8
     - pyyaml
     - requests >=2.25.0
     - scikit-image >=0.19.1
