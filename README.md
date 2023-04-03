@@ -1,17 +1,17 @@
-About gandlf
-============
-
-Home: https://github.com/CBICA/GaNDLF
-
-Package license: LicenseRef-CBICA
+About gandlf-feedstock
+======================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gandlf-feedstock/blob/main/LICENSE.txt)
 
-Summary: The Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
+Home: https://mlcommons.github.io/GaNDLF/
 
-Development: https://cbica.github.io/GaNDLF/extending
+Package license: Apache-2.0
 
-Documentation: https://cbica.github.io/GaNDLF/
+Summary: PyTorch-based framework that handles segmentation/regression/classification using various DL architectures for medical imaging.
+
+Development: https://mlcommons.github.io/GaNDLF/extending/
+
+Documentation: https://mlcommons.github.io/GaNDLF/
 
 Current build status
 ====================
