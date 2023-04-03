@@ -1,17 +1,15 @@
 About gandlf
 ============
 
-Home: https://github.com/CBICA/GaNDLF
+Home: https://github.com/mlcommons/GaNDLF
 
-Package license: LicenseRef-CBICA
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gandlf-feedstock/blob/main/LICENSE.txt)
+Package license: Apache-2.0
 
 Summary: The Generally Nuanced Deep Learning Framework for segmentation, regression and classification.
 
-Development: https://cbica.github.io/GaNDLF/extending
+Development: https://mlcommons.github.io/GaNDLF/extending/
 
-Documentation: https://cbica.github.io/GaNDLF/
+Documentation: https://mlcommons.github.io/GaNDLF/
 
 Current build status
 ====================
