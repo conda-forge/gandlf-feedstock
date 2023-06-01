@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.16.dev20230403" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: e6a910647762acd05f93efd3ac52bc117570ac6164264da1544d3c3c9a577511
+  sha256: 756ce0b24529b5673bdbec50dfb1f49c2db595c588a1eb3bbb2ed42c3ebbbc84
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - onnx
     - opencv
     - openpatchminer ==0.1.8
-    - pandas
+    - pandas <2.0.0
     - psutil
     - pydicom
     - pytest
@@ -43,7 +43,7 @@ requirements:
     - scikit-learn >=0.23.2
     - scipy
     - seaborn
-    - segmentation-models-pytorch ==0.3.0
+    - segmentation-models-pytorch ==0.3.2
     - setuptools
     - simpleitk !=2.0.*,!=2.2.1
     - tiffslide
