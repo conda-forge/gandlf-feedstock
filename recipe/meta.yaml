@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: 4ecb959f6288dfdb61ba1d056ac1bedfc156e9c5069465d58da7a45c9d7eada7
+  sha256: 756ce0b24529b5673bdbec50dfb1f49c2db595c588a1eb3bbb2ed42c3ebbbc84
 
 build:
   noarch: python
