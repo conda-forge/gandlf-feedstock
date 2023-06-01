@@ -31,7 +31,7 @@ requirements:
     - onnx
     - opencv
     - openpatchminer ==0.1.8
-    - pandas
+    - pandas <2.0.0
     - psutil
     - pydicom
     - pytest
@@ -43,7 +43,7 @@ requirements:
     - scikit-learn >=0.23.2
     - scipy
     - seaborn
-    - segmentation-models-pytorch ==0.3.0
+    - segmentation-models-pytorch ==0.3.2
     - setuptools
     - simpleitk !=2.0.*,!=2.2.1
     - tiffslide
