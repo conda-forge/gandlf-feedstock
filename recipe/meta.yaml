@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.1620230518" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
