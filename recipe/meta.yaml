@@ -30,7 +30,6 @@ requirements:
     - numpy ==1.22.0
     - onnx
     - opencv
-    - openpatchminer ==0.1.8
     - pandas <2.0.0
     - psutil
     - pydicom
@@ -51,6 +50,7 @@ requirements:
     - torchinfo ==1.7.0
     - torchio ==0.18.75
     - torchmetrics ==0.8.1
+    - pydeprecate
     - torchvision
     - tqdm
     - twine
