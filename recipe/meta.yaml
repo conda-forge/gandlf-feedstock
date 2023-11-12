@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.16" %}
+{% set version = "0.0.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: 756ce0b24529b5673bdbec50dfb1f49c2db595c588a1eb3bbb2ed42c3ebbbc84
+  sha256: 27566e846dbb73b0b009737f5d6cf2cacf0c69e17517dddea00c6573e0a88390
 
 build:
   noarch: python
@@ -30,7 +30,6 @@ requirements:
     - numpy ==1.22.0
     - onnx
     - opencv
-    - openpatchminer ==0.1.8
     - pandas <2.0.0
     - psutil
     - pydicom
@@ -38,7 +37,7 @@ requirements:
     - pytest-cov
     - python >=3.8
     - pyyaml
-    - requests >=2.25.0
+    - gdown
     - scikit-image >=0.19.1
     - scikit-learn >=0.23.2
     - scipy
@@ -50,7 +49,8 @@ requirements:
     - pytorch ==1.13.1
     - torchinfo ==1.7.0
     - torchio ==0.18.75
-    - torchmetrics ==0.5.1
+    - torchmetrics ==0.8.1
+    - pydeprecate
     - torchvision
     - tqdm
     - twine
