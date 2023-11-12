@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.1720231112" %}
+{% set version = "0.0.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: 1a49f77565e10f54cd1bc9cfea3a787fa3f5ca916662e86027a23726a76d244d
+  sha256: 27566e846dbb73b0b009737f5d6cf2cacf0c69e17517dddea00c6573e0a88390
 
 build:
   noarch: python
@@ -50,7 +50,7 @@ requirements:
     - pytorch ==1.13.1
     - torchinfo ==1.7.0
     - torchio ==0.18.75
-    - torchmetrics ==0.5.1
+    - torchmetrics ==0.8.1
     - torchvision
     - tqdm
     - twine
