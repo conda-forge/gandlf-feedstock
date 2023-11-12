@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.16" %}
+{% set version = "0.0.1720231112" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: 756ce0b24529b5673bdbec50dfb1f49c2db595c588a1eb3bbb2ed42c3ebbbc84
+  sha256: 1a49f77565e10f54cd1bc9cfea3a787fa3f5ca916662e86027a23726a76d244d
 
 build:
   noarch: python
