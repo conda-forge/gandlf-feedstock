@@ -52,6 +52,7 @@ requirements:
     - torchio ==0.19.5
     - torchmetrics ==1.1.2
     - torchvision
+    - typer
     - tiffslide
     - tqdm
     - twine
