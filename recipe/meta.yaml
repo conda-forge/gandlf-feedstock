@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >3.8,<3.12
   run:
     - acsconv ==0.1.1
     - black ==23.11.0
@@ -37,7 +37,7 @@ requirements:
     - pydicom
     - pytest
     - pytest-cov
-    - python >=3.8
+    - python >3.8,<3.12
     - pyyaml
     - pytorch ==2.1.2
     - pydeprecate
