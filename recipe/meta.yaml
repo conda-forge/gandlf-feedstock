@@ -1,5 +1,5 @@
 {% set name = "gandlf" %}
-{% set version = "0.0.1820240209" %}
+{% set version = "0.0.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GANDLF-{{ version }}.tar.gz
-  sha256: f8166053be5c465c853090a8bdd70edfb027b186460d7ac22eeae4a8364fe1cc
+  sha256: efb73b279b8f69281b35a34c5e93b1cf3f43231bc9232c824739f816bd3f8a82
 
 build:
   noarch: python
@@ -20,38 +20,39 @@ requirements:
     - python >=3.8
   run:
     - acsconv ==0.1.1
-    - black
+    - black ==23.11.0
     - coverage
     - dicom-anonymizer
     - docker-py
+    - gdown ==4.6.3
     - keyring
     - matplotlib-base
     - medcam
-    - numpy ==1.22.0
+    - monai ==1.3.0
+    - numpy ==1.25.0
     - onnx
     - opencv
-    - pandas <2.0.0
+    - pandas >=2.0.0
     - psutil
     - pydicom
     - pytest
     - pytest-cov
     - python >=3.8
     - pyyaml
-    - gdown
+    - pytorch ==2.1.2
+    - pydeprecate
     - scikit-image >=0.19.1
     - scikit-learn >=0.23.2
     - scipy
     - seaborn
-    - segmentation-models-pytorch ==0.3.2
+    - segmentation-models-pytorch ==0.3.3
     - setuptools
     - simpleitk !=2.0.*,!=2.2.1
-    - tiffslide
-    - pytorch ==1.13.1
     - torchinfo ==1.7.0
-    - torchio ==0.18.75
-    - torchmetrics ==0.8.1
-    - pydeprecate
+    - torchio ==0.19.5
+    - torchmetrics ==1.1.2
     - torchvision
+    - tiffslide
     - tqdm
     - twine
     - zarr ==2.10.3
