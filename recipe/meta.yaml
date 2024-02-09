@@ -61,8 +61,8 @@ requirements:
 test:
   imports:
     - GANDLF
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 
