@@ -22,9 +22,9 @@ requirements:
     - acsconv ==0.1.1
     - black ==23.11.0
     - coverage
-    - dicom-anonymizer
+    - dicom-anonymizer ==1.0.12
     - docker-py
-    - gdown ==4.6.3
+    - gdown ==5.1.0
     - keyring
     - matplotlib-base
     - medcam
