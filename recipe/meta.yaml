@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.9,<3.12
-    - pytorch ==2.3.1
+    - pytorch ==2.5.0
     - black ==23.11.0
     - numpy ==1.25.0
     - scipy
@@ -64,6 +64,7 @@ requirements:
     - huggingface_hub ==0.25.1
     - openslide >=4.0.0
     - openslide-python ==1.4.1
+    - lion-pytorch ==0.2.2
 
 test:
   imports:
