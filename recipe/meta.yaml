@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }},<3.12
     - pytorch ==2.3.1
