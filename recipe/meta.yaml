@@ -87,6 +87,7 @@ requirements:
     - lion-pytorch ==0.2.2
     - pydantic ==2.10.6
     - panoptica >=1.4.1
+    - typer >=0.15.0
 
 test:
   imports:
